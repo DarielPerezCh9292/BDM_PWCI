@@ -1,0 +1,150 @@
+/* Estilos comunes para el navbar principal con tema de fútbol */
+
+/* Navbar principal */
+.navbar {
+    /*background: linear-gradient(90deg, #1e4d2b 0%, #2d5a3d 100%);*/
+    background: linear-gradient(90deg, #251e4d 0%, #352d5a 100%);
+    
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    
+}
+
+/* Brand/Logo */
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8eb2ff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.navbar-brand:hover {
+    color: white !important;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-container input {
+    border-radius: 25px 0 0 25px;
+    border: 2px solid #352d5a;
+    background: rgba(255,255,255,0.1);
+    color: rgb(0, 0, 0);
+}
+
+.search-container input::placeholder {
+    color: rgb(152, 152, 152);
+}
+
+.search-container input:focus {
+    background: rgba(255,255,255,0.2) !important;
+    color: rgb(0, 0, 0);
+    
+    border-color: #352d5a !important;
+}
+
+.search-container input:focus::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.search-container button {
+    border-radius: 0 25px 25px 0;
+    border: 2px solid #352d5a;
+    border-left: none;
+    background: #352d5a;
+    color: white;
+    font-weight: 600;
+}
+
+/* Enlaces de navegación */
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 600;
+    padding: 12px 20px !important;
+    border-radius: 25px;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #8eb2ff !important;
+    background: rgba(255,215,0,0.1);
+    border-color: #8eb2ff;
+    transform: translateY(-3px);
+    
+}
+
+.navbar-nav .nav-link.active {
+    color: #8eb2ff !important;
+    background: rgba(255,215,0,0.15);
+    border-color: #8eb2ff;
+    
+}
+
+/* Botón de cerrar sesión */
+.btn-logout {
+    background: #8eb2ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 28px;
+    font-weight: 600;
+    
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #4d68a1 !important;
+    transform: translateY(-3px);
+    
+}
+
+/* Espaciador para navbar fijo */
+.navbar-spacer {
+    height: 80px;
+}
+
+/* Dropdown menus */
+.dropdown-menu {
+    min-width: auto;
+}
+
+/* Efectos hover para el navbar */
+@keyframes navbarGlow {
+    0% { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+    50% { box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2); }
+    100% { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+}
+
+.navbar:hover {
+    animation: navbarGlow 2s ease-in-out infinite;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .search-container {
+        margin: 15px 0;
+        max-width: 100%;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 15px 20px !important;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .btn-logout {
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+}

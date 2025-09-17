@@ -1,0 +1,199 @@
+/* Ajustes para el navbar fijo */
+body {
+    padding-top: 0 !important;
+}
+
+/* Contenedor principal con margen superior */
+main, .main-content, .content-wrapper {
+    margin-top: 90px !important;
+    padding-top: 20px !important;
+}
+
+.user-list {
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px !important;
+    padding: 20px;
+}
+
+.user-card {
+    width: 250px;
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    border-color: #8eb2ff;
+}
+
+.user-card .user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-card .user-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-card .followers-count {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.follow-btn {
+    background-color: #4CAF50;
+    background: linear-gradient(90deg, #251e4d 0%, #352d5a 100%);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.follow-btn:hover {
+    background-color: #45a049;
+}
+
+.chat-btn {
+    background-color: #2196F3; /* Azul */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.chat-btn:hover {
+    background-color: #0b7dda;
+}
+
+
+/* Estilo general del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fff;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cabecera del modal */
+.modal-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+}
+
+.modal-header .user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.modal-header .close-btn {
+    margin-left: auto;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Cuerpo del modal (historial de mensajes) */
+.modal-body {
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message.received {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+.message.sent {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Pie del modal (input y botón de enviar) */
+.modal-footer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    gap: 10px;
+}
+
+.message-input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.send-btn {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+    background-color: #0b7dda;
+}
+
+
+.user-name a {
+    color: #000000;  /* color negro o el que prefieras */
+    text-decoration: none;  /* Sin subrayado por defecto */
+}
+
+.user-name a:hover {
+    color: #007bff;  /* Color cuando el usuario pase el ratón sobre el enlace */
+    text-decoration: underline;  /* Subrayado cuando se pasa el ratón */
+}
+

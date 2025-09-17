@@ -1,0 +1,613 @@
+.search-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Separación del contenido superior */
+}
+
+.test_input_color{
+    color: black;
+}
+
+.aprobation-success{
+  background-color: #352d5a;
+}
+
+.search-input {
+    width: 80%;  /* Ocupa el 80% del ancho */
+    max-width: 500px; /* Límite de 500px de ancho */
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+.search-input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    max-width: 900px; 
+    margin: 0 auto; /* Centra el post */
+}
+
+.post .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.post .user-name {
+    font-weight: bold;
+}
+
+.post .post-content {
+    margin: 10px 0;
+}
+
+.comment-section {
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment .comment-user {
+    font-weight: bold;
+    color: #2c3e50; /* Color para el nombre del usuario */
+}
+
+.comment .comment-content {
+    margin-left: 10px;
+    color: #34495e; /* Color del texto del comentario */
+}
+
+
+.post .post-actions button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    width: auto;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.post .post-actions button:hover {
+    background-color: #45a049;
+}
+
+
+.post .like-btn {
+    background-color: #2196F3;
+}
+
+.post .like-btn:hover {
+    background-color: #0b7dda;
+}
+
+
+
+.post-image {
+    width: 100%;  
+    max-height: 400px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-top: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin: 15px auto;
+}
+
+/*-----REACCIONES-----*/
+/*-----REACCIONES-----*/
+/*-----REACCIONES-----*/
+
+
+.reaction-container {
+    position: relative;
+    display: inline-block;
+}
+
+.reactions {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.reactions span {
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.reactions span:hover {
+    transform: scale(1.3);
+}
+
+
+/*-----Publicaciones-----*/
+/*-----Publicaciones-----*/
+/*-----Publicaciones-----*/
+
+.create-post {
+    background-color: linear-gradient(90deg, #1e4d2b 0%, #2d5a3d 100%);
+    border-color: linear-gradient(90deg, #1e4d2b 0%, #2d5a3d 100%);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.create-post-header {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.create-post-header .user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.create-post-header textarea {
+    flex: 1;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    min-height: 60px;
+}
+
+.create-post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.create-post-footer input[type="file"] {
+    flex: 1;
+}
+
+.create-post-footer button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post-footer button:hover {
+    background-color: #45a049;
+}
+
+.textarea2 {
+    flex: 1;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 500px;
+}
+
+
+.buttons-container {
+    display: flex;
+    gap: 10px; 
+}
+
+#showMapButton {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showMapButton:hover {
+    background-color: #1976D2;
+}
+
+/* ===== ESTILOS PARA LA PÁGINA PRINCIPAL ===== */
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.main-container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Sidebar izquierdo */
+.sidebar {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar h5 {
+    color: #251e4d;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sidebar .border-top {
+    border-color: #e9ecef !important;
+}
+
+/* ===== SLIDER DE AÑOS MUNDIALES ===== */
+.world-cup-years-slider {
+    /* background: linear-gradient(135deg, #251e4d 0%, #352d5a 100%); */
+    background: linear-gradient(135deg, #251e4d 0%, #352d5a 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(30, 77, 43, 0.3);
+}
+
+.world-cup-years-slider h5 {
+    color: #8eb2ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.years-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.years-track {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    gap: 15px;
+}
+
+.year-capsule {
+    background: #6755cf;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-capsule:hover {
+    transform: translateY(-3px);
+    
+    border-color: #251e4d;
+}
+
+.year-capsule.active {
+    /* background: linear-gradient(135deg, #251e4d 0%, #352d5a 100%); */
+    background: linear-gradient(135deg, #251e4d 0%, #352d5a 100%);
+    color: #8eb2ff;
+    border-color: #8eb2ff;
+    box-shadow: 0 6px 20px rgba(30, 77, 43, 0.4);
+}
+
+.year-capsule .year-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #251e4d;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.3);
+}
+
+.year-capsule.active .year-number {
+    color: #8eb2ff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+}
+
+/* Controles del slider */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.slider-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #8eb2ff;
+    color: #8eb2ff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.slider-btn:hover {
+    background: #8eb2ff;
+    color: #251e4d;
+    transform: scale(1.1);
+}
+
+.slider-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Indicador de posición */
+.slider-indicator {
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+/* Responsive para el slider */
+@media (max-width: 768px) {
+    .world-cup-years-slider {
+        padding: 15px;
+    }
+    
+    .years-container {
+        height: 400px;
+    }
+    
+    .year-capsule {
+        padding: 12px;
+        min-height: 50px;
+    }
+    
+    .year-capsule .year-number {
+        font-size: 1.3rem;
+    }
+}
+
+/* ===== ESTILOS EXISTENTES DEL SIDEBAR ===== */
+.sidebar .d-flex.align-items-center {
+    margin-bottom: 15px;
+}
+
+.sidebar .rounded-circle {
+    border: 2px solid #e9ecef;
+}
+
+.sidebar .text-primary {
+    color: #251e4d !important;
+}
+
+.sidebar .text-success {
+    color: #352d5a !important;
+}
+
+.sidebar .text-muted {
+    color: #6c757d !important;
+}
+
+/* ===== ESTILOS PARA CREAR PUBLICACIÓN ===== */
+.create-post {
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
+    border: 2px solid #0000009b;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.create-post .card-body {
+    padding: 0;
+    
+}
+
+.create-post textarea {
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.create-post textarea:focus {
+    border-color: #251e4d;
+    box-shadow: 0 0 0 0.2rem rgba(30, 77, 43, 0.25);
+}
+
+.create-post .btn-outline-primary {
+    border-color: #251e4d;
+    color: #251e4d;
+}
+
+.create-post .btn-outline-primary:hover {
+    background-color: #251e4d;
+    border-color: #251e4d;
+    color: white;
+}
+
+.create-post .btn-primary {
+    /* background: linear-gradient(135deg, #251e4d 0%, #352d5a 100%); */
+    background: linear-gradient(90deg, #251e4d 0%, #352d5a 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.create-post .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 77, 43, 0.3);
+}
+
+/* ===== ESTILOS PARA EL FEED ===== */
+.feed .post {
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
+    border-radius: 15px;
+    border-color: #8eb2ff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: white;
+}
+
+.feed .card-body {
+    padding: 20px;
+    border-color: #8eb2ff;
+}
+
+.feed .card-text {
+    color: white;
+    line-height: 1.6;
+}
+
+.feed .btn-outline-secondary {
+    background-color: rgba(255,215,0,0.15);
+    border-color: #6c757d;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.feed .btn-outline-secondary:hover {
+    background-color: rgba(255,215,0,0.15);
+    border-color: #8eb2ff;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.feed .badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+/* ===== ESTILOS PARA COMENTARIOS ===== */
+.comments-section {
+    margin-top: 15px;
+}
+
+.comment-form .input-group {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.comment-form .form-control {
+    border: 2px solid #e9ecef;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+}
+
+.comment-form .btn {
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(135deg, #251e4d 0%, #352d5a 100%);
+    border: none;
+    padding: 8px 16px;
+}
+
+/* ===== ESTILOS PARA TENDENCIAS ===== */
+.sidebar .badge {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+    border-radius: 10px;
+}
+
+.sidebar .text-danger {
+    color: #dc3545 !important;
+}
+
+.sidebar .text-info {
+    color: #17a2b8 !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991.98px) {
+    .sidebar {
+        margin-bottom: 20px;
+    }
+    
+    .world-cup-years-slider {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-container {
+        padding: 15px;
+    }
+    
+    .create-post,
+    .feed .post {
+        padding: 15px;
+    }
+    
+    .year-capsule .year-number {
+        font-size: 1.2rem;
+    }
+}
+

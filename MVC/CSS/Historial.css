@@ -1,0 +1,315 @@
+/* ===== ESTILOS PARA HISTORIAL DE MODERACIÓN ===== */
+/* Incluye ajustes para el navbar fijo */
+
+/* Ajustes para el navbar fijo */
+body {
+    padding-top: 0 !important;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal con margen superior */
+main, .main-content, .content-wrapper {
+    margin-top: 90px !important;
+    padding-top: 20px !important;
+}
+
+/* Contenedor principal de la página */
+.container {
+    margin-top: 90px !important;
+    padding-top: 20px !important;
+}
+
+/* Ajustes específicos para elementos de la página */
+.row {
+    margin-top: 20px !important;
+}
+
+.col-md-12, .col-lg-12 {
+    margin-top: 20px !important;
+}
+
+/* Títulos de sección */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px !important;
+}
+
+/* Primera fila de contenido */
+.row:first-child {
+    margin-top: 30px !important;
+}
+
+/* Título principal */
+h1, h2, h3 {
+    margin-top: 20px !important;
+}
+
+/* Tarjetas de estadísticas (si las hay) */
+.stats-card {
+    background: linear-gradient(135deg, #ffd700 0%, #ff6b35 100%) !important;
+    color: #1e4d2b !important;
+    border-radius: 15px !important;
+    padding: 30px !important;
+    margin-bottom: 30px !important;
+    text-align: center !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    transition: all 0.3s ease !important;
+    border: 2px solid #1e4d2b !important;
+}
+
+.stats-card h3 {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+    color: #1e4d2b !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2) !important;
+}
+
+.stats-card p {
+    font-size: 1.2rem !important;
+    margin: 0 !important;
+    opacity: 0.9 !important;
+    color: #1e4d2b !important;
+    font-weight: 600 !important;
+}
+
+.stats-card .icon {
+    font-size: 3rem !important;
+    color: #1e4d2b !important;
+    margin-bottom: 15px !important;
+    opacity: 0.9 !important;
+    transition: all 0.3s ease !important;
+}
+
+.stats-card:hover .icon {
+    transform: scale(1.1) !important;
+    opacity: 1 !important;
+}
+
+/* Tarjetas de historial */
+.historial-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.historial-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Badges de estado */
+.estado-badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+/* Timeline de moderación */
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #007bff;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 2px;
+    height: calc(100% - 12px);
+    background-color: #e9ecef;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+/* Información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.user-details h5 {
+    margin: 0;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.user-details small {
+    color: #6c757d;
+}
+
+/* Contenido de la publicación */
+.publication-content {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 4px solid #007bff;
+}
+
+.publication-text {
+    margin: 0;
+    color: #495057;
+    line-height: 1.5;
+}
+
+/* Información de moderación */
+.moderation-info {
+    background-color: #e3f2fd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 4px solid #2196f3;
+}
+
+.moderation-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.moderation-date {
+    color: #1976d2;
+    font-weight: 500;
+}
+
+.moderator-name {
+    color: #1565c0;
+    font-weight: 600;
+}
+
+/* Estados de moderación */
+.estado-pendiente { 
+    background-color: #fff3cd; 
+    color: #856404; 
+}
+
+.estado-aprobada { 
+    background-color: #d4edda; 
+    color: #155724; 
+}
+
+.estado-rechazada { 
+    background-color: #f8d7da; 
+    color: #721c24; 
+}
+
+/* Comentarios de moderación */
+.moderation-comment {
+    background-color: #fff8e1;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    border-left: 4px solid #ffc107;
+}
+
+.comment-text {
+    margin: 0;
+    color: #856404;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 80px !important;
+        padding: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 20px;
+    }
+    
+    .timeline-item::before {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .moderation-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .historial-card {
+        padding: 10px;
+    }
+}
+
+/* ===== ESTILOS EXTRAÍDOS DEL HTML ===== */
+
+.historial-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.estado-badge {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #007bff;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 2px;
+    height: calc(100% - 12px);
+    background-color: #e9ecef;
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}

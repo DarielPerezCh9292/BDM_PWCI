@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil | Red Social</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../MVC/CSS/Perfil.css">
+    <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
+    
+
+</head>
+<body>
+
+<!-- Incluir el navbar personalizado -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <!-- Logo/Brand -->
+        <a class="navbar-brand d-flex align-items-center ms-5" href="indexx.html">
+            
+            <span>FUTBOOK</span>
+        </a>
+        
+        <!-- Botón hamburguesa para móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Contenido colapsable del navbar -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Barra de búsqueda centrada -->
+            <div class="navbar-nav mx-auto">
+                
+            </div>
+            
+            <!-- Enlaces de navegación -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="indexx.html">
+                        <i class="fas fa-home me-1"></i> Principal
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="Usuarios.html">
+                        <i class="fas fa-users me-1"></i> Usuarios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center active" href="Perfil.html">
+                        <i class="fas fa-user me-1"></i> Perfil
+                    </a>
+                </li>
+                
+                <!-- Enlaces administrativos -->
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="reportes.html">
+                        <i class="fas fa-chart-bar me-1"></i> Reportes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="moderar_publicaciones.html">
+                        <i class="fas fa-shield-alt me-1"></i> Moderación
+                    </a>
+                </li>
+                
+                <!-- Botón de cerrar sesión -->
+                <li class="nav-item ms-2">
+                    <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
+                        <i class="fas fa-sign-out-alt me-1"></i> Cerrar Sesión
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Espaciador para evitar que el contenido se oculte detrás del navbar fijo -->
+<div class="navbar-spacer"></div>
+
+<!-- Contenedor principal -->
+<div class="main-content">
+    <div class="profile-container">
+        <!-- Información de Usuario -->
+        <div class="profile-info">
+            <div class="profile-header">
+                <img src="../imgs/img3.png" alt="Foto de Perfil" class="profile-photo" id="profilePhoto">
+                <div class="profile-name">
+                    <h2>Moctezuma <span id="emailText">Moctete@outlook.es</span></h2> 
+                    <button class="edit-profile-btn" onclick="openEditModal()">
+                        <i class="fas fa-edit"></i> Editar Perfil
+                    </button>
+                </div>
+            </div>
+            <div class="profile-details text-center">
+                <p><span id="bioText">La vida es como el sueño de una mariposa.</span></p>
+                
+                <p><strong>Seguidores:</strong> <span id="followersText">25</span> <strong>Siguiendo:</strong> <span id="followingText">18</span></p>
+                
+            </div>
+        </div>
+        
+        <!-- Sección de publicaciones -->
+        <div class="recent-posts">
+            
+            
+            <!-- Publicación de ejemplo 1 -->
+            <article class="post" id="post-1">
+                        <div class="card-body">
+                            <!-- Cabecera de la publicación -->
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../imgs/img3.png" 
+                                        alt="Foto de perfil" class="rounded-circle me-3" width="40" height="40">
+                                <div>
+                                    <h6 class="mb-0">Moctezuma</h6>
+                                    <small>10 Jun 2025 02:30</small>
+                                    <span class="badge aprobation-success ms-2">Aprobada</span>
+                                </div>
+                            </div>
+
+                            <!-- Contenido de la publicación -->
+                            <p class="card-text mb-3">Primer comentario en mi perfil.</p>
+
+                            <!-- Interacciones -->
+                            <div class="border-top border-bottom py-3 mb-3">
+                                <div class="dropdown d-inline-block me-2">
+                                    <button class="btn btn-outline-secondary " type="button" id="reaccionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="far fa-thumbs-up"></i> Reaccionar
+                                    </button>
+                                    
+                                </div>
+
+                                <button class="btn btn-outline-secondary">
+                                    <i class="far fa-comment"></i> Comentar
+                                </button>
+                            </div>
+
+                            <!-- Contador de reacciones -->
+                            <div class="mb-3 ps-2">
+                                <span class="me-3 text-muted">❤️ 3</span>
+                                
+                            </div>
+
+                            <div class="mt-3">
+                                <button class="btn boton_editar btn-outline-primary" onclick="editPost(2)">
+                                    <i class="fas fa-edit"></i> Editar
+                                </button>
+                            
+                                <button class="btn btn-danger" onclick="deletePost(2)">
+                                    <i class="fas fa-trash-alt"></i> Eliminar
+                                </button>
+                            </div>
+
+                            
+                        </div>
+                    </article>
+
+            <!-- Publicación de ejemplo 1 -->
+            <article class="post" id="post-2">
+                <div class="card-body">
+                    <!-- Cabecera de la publicación -->
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="../imgs/img3.png" alt="Foto de perfil" class="rounded-circle me-3" width="40" height="40">
+                        <div>
+                            <h6 class="mb-0">Moctezuma</h6>
+                            <small>12 Jun 2025 03:45</small>
+                            <span class="badge aprobation-success ms-2">Aprobada</span>
+                        </div>
+                    </div>
+            
+                    <!-- Contenido de la publicación -->
+                    <p class="card-text mb-3">segundo comentario en mi perfil.</p>
+            
+                    <!-- Interacciones -->
+                    <div class="border-top border-bottom py-3 mb-3">
+                        <div class="dropdown d-inline-block me-2">
+                            <button class="btn btn-outline-secondary " type="button" id="reaccionDropdown" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="far fa-thumbs-up"></i> Reaccionar
+                            </button>
+            
+                        </div>
+            
+                        <button class="btn btn-outline-secondary">
+                            <i class="far fa-comment"></i> Comentar
+                        </button>
+                    </div>
+            
+                    <!-- Contador de reacciones -->
+                    <div class="mb-3 ps-2">
+                        <span class="me-3 text-muted">❤️ 1</span>
+            
+                    </div>
+            
+                    <div class="mt-3">
+                        <button class="btn boton_editar btn-outline-primary" onclick="editPost(2)">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+            
+                        <button class="btn btn-danger" onclick="deletePost(2)">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </button>
+                    </div>
+            
+            
+                </div>
+            </article>
+
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal para editar perfil -->
+<div id="editProfileModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><i class="fas fa-user-edit"></i> Editar Perfil</h2>
+      <span class="close-btn" onclick="closeEditModal()">&times;</span>
+    </div>
+
+    <div class="modal-body">
+        <form class="edit-form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="username">Nombre de usuario</label>
+              <input type="text" name="nombre" id="username" value="Moctezuma" required>
+            </div>
+
+            <div class="form-group">
+                <label>Tipo de usuario</label>
+                <div class="read-only-field">
+                    Usuario común
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bio">Biografía</label>
+              <textarea name="biografia" id="bio" rows="3">Esta es una biografía de ejemplo para mostrar cómo se verá el perfil del usuario. Aquí puedes escribir sobre ti, tus intereses y lo que te gusta compartir.</textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" name="correo" id="email" value="usuario@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="photoInput">Foto de perfil</label>
+              <div class="photo-upload-container">
+                <img src="../imgs/img3.png" alt="Vista previa" id="profilePhotoPreview" class="photo-preview">
+                <input type="file" name="imagen_perfil" id="photoInput" accept="image/*">
+                <button type="button" class="btn btn-outline-primary btn-sm" onclick="document.getElementById('photoInput').click()">
+                  <i class="fas fa-camera"></i> Cambiar Foto
+                </button>
+                <p class="photo-help">Haz clic en la imagen o usa el botón para cambiar tu foto de perfil</p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="cancel-btn" onclick="closeEditModal()">Cancelar</button>
+              <button type="submit" class="save-btn">Guardar Cambios</button>
+            </div>
+          </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para editar publicacion -->
+                <div id="editarModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2><i class="fas fa-edit"></i> Editar Publicación</h2>
+            <span class="close-btn" onclick="closeEditPostModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form id="formEditar" action="#" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="id_publicacion" id="edit-id">
+                <input type="hidden" id="imagen-actual" name="imagen_actual">
+                <input type="hidden" id="video-actual" name="video_actual">
+
+                <div class="form-group">
+                    <label for="edit-texto" class="form-label">Texto:</label>
+                    <textarea class="form-control" id="edit-texto" name="texto" rows="3"></textarea>
+                </div>
+
+                <!-- Vista previa del archivo actual -->
+                <div id="preview-imagen" class="mb-3"></div>
+                <div id="preview-video" class="mb-3"></div>
+
+                <!-- Imagen -->
+                <label class="btn btn-outline-primary">
+                    Seleccionar imagen
+                    <input type="file" id="edit-imagen" name="imagen" accept="image/*" class="d-none">
+                </label>
+
+                <!-- Video -->
+                <label class="btn btn-outline-primary">
+                    Seleccionar video
+                    <input type="file" id="edit-video" name="video" accept="video/*" class="d-none">
+                </label>
+                
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Guardar cambios</button>
+                    <button type="button" class="cancel-btn" onclick="closeEditPostModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="../MVC/Boostrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script para funcionalidad de la página -->
+<script>
+// Funciones para los modales
+function openEditModal() {
+    document.getElementById('editProfileModal').style.display = 'block';
+}
+
+function closeEditModal() {
+    document.getElementById('editProfileModal').style.display = 'none';
+}
+
+function editPost(postId) {
+    document.getElementById('editarModal').style.display = 'block';
+    document.getElementById('edit-id').value = postId;
+    // Aquí podrías cargar los datos de la publicación
+}
+
+function closeEditPostModal() {
+    document.getElementById('editarModal').style.display = 'none';
+}
+
+function deletePost(postId) {
+    if (confirm('¿Estás seguro de que quieres eliminar esta publicación?')) {
+        // Aquí iría la lógica para eliminar la publicación
+        document.getElementById('post-' + postId).remove();
+        alert('Publicación eliminada');
+    }
+}
+
+// Cerrar modales al hacer clic fuera de ellos
+window.onclick = function(event) {
+    const editModal = document.getElementById('editProfileModal');
+    const editPostModal = document.getElementById('editarModal');
+    
+    if (event.target === editModal) {
+        editModal.style.display = 'none';
+    }
+    
+    if (event.target === editPostModal) {
+        editPostModal.style.display = 'none';
+    }
+}
+
+// Previsualización de foto de perfil
+document.getElementById('photoInput').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            document.getElementById('profilePhotoPreview').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+// Manejo del formulario de edición de perfil
+document.querySelector('.edit-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Aquí iría la lógica para guardar los cambios
+    alert('Cambios guardados (en una implementación real)');
+    closeEditModal();
+});
+
+// Manejo del formulario de edición de publicación
+document.getElementById('formEditar').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Aquí iría la lógica para guardar los cambios
+    alert('Publicación actualizada (en una implementación real)');
+    closeEditPostModal();
+});
+</script>
+
+</body>
+</html>
