@@ -5,6 +5,15 @@
     margin-top: 20px; /* Separación del contenido superior */
 }
 
+
+.Fondo_futbol {
+    background-image: url("/imgs/Fondo_futbol2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 .test_input_color{
     color: black;
 }
@@ -273,15 +282,18 @@ body {
 
 /* Sidebar izquierdo */
 .sidebar {
-    background: white;
+    
+    background: #251e4d;
     border-radius: 15px;
+    
+    border: 2px solid #0000009b;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
 .sidebar h5 {
-    color: #251e4d;
+    color: #dad4ff;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -516,7 +528,7 @@ body {
 
 .feed .card-body {
     padding: 20px;
-    border-color: #8eb2ff;
+    border: 2px solid #0000009b;
 }
 
 .feed .card-text {
@@ -550,6 +562,7 @@ body {
 /* ===== ESTILOS PARA COMENTARIOS ===== */
 .comments-section {
     margin-top: 15px;
+    color: black;
 }
 
 .comment-form .input-group {

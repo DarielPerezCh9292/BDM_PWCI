@@ -6,125 +6,119 @@
     <link rel="stylesheet" href="../MVC/CSS/Reportes.css">
     <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
     <!-- Estilos del navbar -->
-    <link rel="stylesheet" href="../MVC/CSS/Style.css">
+    <!-- <link rel="stylesheet" href="../MVC/CSS/Style.css"> -->
     <!-- Estilos del navbar común -->
     <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
     <!-- Font Awesome para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Reportes</title>
+    <title>FUTBOOK REPORTES</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
 
 </head>
-<body>
+<body class="Fondo_futbol">
 
-<!-- Incluir el navbar personalizado -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-fluid">
-        <!-- Logo/Brand -->
-        <a class="navbar-brand d-flex align-items-center ms-5" href="indexx.html">
-            
-            <span>FUTBOOK</span>
-        </a>
-        
-        <!-- Botón hamburguesa para móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Contenido colapsable del navbar -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Barra de búsqueda centrada -->
-            <div class="navbar-nav mx-auto">
-                
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo/Brand -->
+            <a class="navbar-brand d-flex align-items-center ms-5" href="index.html">
+                <i class="Futbook_logo"></i>
+                <span>FUTBOOK</span>
+            </a>
+    
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Contenido colapsable del navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Barra de búsqueda centrada -->
+                <div class="navbar-nav mx-auto">
+    
+                </div>
+    
+                <!-- Enlaces de navegación -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="index.html">
+                            Principal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="Usuarios.html">
+                            Usuarios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="Perfil.html">
+                            Perfil
+                        </a>
+                    </li>
+    
+                    <!-- Enlaces administrativos -->
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center active" href="reportes.html">
+                            Reportes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="moderar_publicaciones.html">
+                            Moderación
+                        </a>
+                    </li>
+    
+                    <!-- Botón de cerrar sesión -->
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
             </div>
-            
-            <!-- Enlaces de navegación -->
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="indexx.html">
-                        <i class="fas fa-home me-1"></i> Principal
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="Usuarios.html">
-                        <i class="fas fa-users me-1"></i> Usuarios
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="Perfil.html">
-                        <i class="fas fa-user me-1"></i> Perfil
-                    </a>
-                </li>
-                
-                <!-- Enlaces administrativos -->
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center active" href="reportes.html">
-                        <i class="fas fa-chart-bar me-1"></i> Reportes
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center" href="moderar_publicaciones.html">
-                        <i class="fas fa-shield-alt me-1"></i> Moderación
-                    </a>
-                </li>
-                
-                <!-- Botón de cerrar sesión -->
-                <li class="nav-item ms-2">
-                    <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
-                        <i class="fas fa-sign-out-alt me-1"></i> Cerrar Sesión
-                    </a>
-                </li>
-            </ul>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- Espaciador para evitar que el contenido se oculte detrás del navbar fijo -->
-<div class="navbar-spacer"></div>
+    <!-- Espaciador para evitar que el contenido se oculte detrás del navbar fijo -->
+    <div class="navbar-spacer"></div>
 
-<!-- Header de la página -->
-<div class="page-header">
+    
+
     <div class="container">
-        <h1 class="page-title">
-            <i class="fas fa-chart-bar"></i> REPORTES
-        </h1>
-        <p class="page-subtitle">Estadísticas</p>
-    </div>
-</div>
+        <!-- Información adicional -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            <i class="fas fa-info-circle text-primary"></i> REPORTE DEL SISTEMA
+                        </h5>
+                        <p class="card-text">
+                            Estadísticas generales de la plataforma.
+                        </p>
+                        <p class="card-text mt-5">
+                            *Sin reportes por ahora*
+                        </p>
 
-<div class="container">
-    <!-- Información adicional -->
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">
-                        <i class="fas fa-info-circle text-primary"></i> REPORTE DEL SISTEMA
-                    </h5>
-                    <p class="card-text">
-                        Estadísticas generales de la plataforma.
-                    </p>
-                    <p class="card-text mt-5">
-                        *Sin reportes por ahora*
-                    </p>
-                    
-                    <div class="row mt-3">
-                        <div class="col text-end">
-                            <small>
-                                <i class="fas fa-clock"></i> Actualizado: 15/09/2025 14:30
-                            </small>
+                        <div class="row mt-3">
+                            <div class="col text-end">
+                                <small>
+                                    <i class="fas fa-clock"></i> Actualizado: 15/09/2025 14:30
+                                </small>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    
-    
-    
-</div>
 
-<script src="../MVC/Boostrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+    </div>
+
+    <script src="../MVC/Boostrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

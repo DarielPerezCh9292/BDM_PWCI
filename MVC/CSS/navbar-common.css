@@ -9,6 +9,15 @@
     
 }
 
+.Futbook_logo{
+    background-image: url("/imgs/favicon.ico");
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Brand/Logo */
 .navbar-brand {
     font-size: 2rem;

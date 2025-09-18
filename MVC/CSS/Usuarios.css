@@ -3,9 +3,17 @@ body {
     padding-top: 0 !important;
 }
 
+.Fondo_futbol {
+    background-image: url("/imgs/Fondo_futbol2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
 /* Contenedor principal con margen superior */
 main, .main-content, .content-wrapper {
-    margin-top: 90px !important;
+    margin-top: 80px !important;
     padding-top: 20px !important;
 }
 
@@ -13,8 +21,8 @@ main, .main-content, .content-wrapper {
     gap: 20px;
     justify-content: center;
     text-align: center;
-    margin-top: 90px !important;
-    padding: 20px;
+    margin-top: 10px !important;
+    
 }
 
 .user-card {
@@ -24,7 +32,7 @@ main, .main-content, .content-wrapper {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
-    border-color: #8eb2ff;
+    border: 2px solid #0000009b;
 }
 
 .user-card .user-photo {
