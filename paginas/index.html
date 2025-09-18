@@ -245,48 +245,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../MVC/Boostrap/js/bootstrap.bundle.min.js"></script>
+    
     <script src="../MVC/JS/Principal.js"></script>
 
-    <!-- Script para funcionalidad de la página -->
-    <script>
-        // Funcionalidad para previsualización de archivos
-        document.getElementById('postImage').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById('previewImg').src = e.target.result;
-                    document.getElementById('imagePreview').classList.remove('d-none');
-                    document.getElementById('videoPreview').classList.add('d-none');
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-        document.getElementById('postVideo').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById('previewVideo').src = e.target.result;
-                    document.getElementById('videoPreview').classList.remove('d-none');
-                    document.getElementById('imagePreview').classList.add('d-none');
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-        // Manejo del formulario
-        document.getElementById('postForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Aquí iría la lógica para enviar la publicación
-            alert('Publicación enviada (en una implementación real)');
-            this.reset();
-            document.getElementById('imagePreview').classList.add('d-none');
-            document.getElementById('videoPreview').classList.add('d-none');
-        });
-    </script>
+    
 
 </body>
 </html>
