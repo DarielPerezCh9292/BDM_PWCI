@@ -10,14 +10,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.Fondo_futbol {
-    background-image: url("/imgs/Fondo_futbol2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
-
 
 .card_width{
     width: 100%;

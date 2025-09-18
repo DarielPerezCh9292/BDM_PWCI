@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUTBOOK PUBLICACIONES</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
     <!-- Estilos del navbar -->
     <link rel="stylesheet" href="../MVC/CSS/Style.css">
     <!-- Estilos del navbar común -->
     <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
     <link rel="stylesheet" href="../MVC/CSS/Publicaciones.css">
 </head>
-<body>
+<body class="Fondo_futbol">
     <!-- Incluir el navbar personalizado -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
@@ -20,26 +21,27 @@
                 <i class="fas fa-futbol me-2"></i>
                 <span>RedSocial</span>
             </a>
-            
+
             <!-- Botón hamburguesa para móviles -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- Contenido colapsable del navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Barra de búsqueda centrada -->
                 <div class="navbar-nav mx-auto">
                     <div class="search-container d-flex align-items-center">
                         <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Buscar usuarios, publicaciones...">
-                        <button class="btn" type="button">
+                            <input type="text" class="form-control" placeholder="Buscar usuarios, publicaciones...">
+                            <button class="btn" type="button">
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Enlaces de navegación -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -57,7 +59,7 @@
                             <i class="fas fa-user me-1"></i> Mi Perfil
                         </a>
                     </li>
-                    
+
                     <!-- Enlaces administrativos -->
                     <li class="nav-item">
                         <a class="nav-link d-flex align-items-center" href="reportes.html">
@@ -69,10 +71,10 @@
                             <i class="fas fa-shield-alt me-1"></i> Moderar
                         </a>
                     </li>
-                    
+
                     <!-- Botón de cerrar sesión -->
                     <li class="nav-item ms-2">
-                                            <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
+                        <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
                             <i class="fas fa-sign-out-alt me-1"></i> Cerrar Sesión
                         </a>
                     </li>
@@ -82,7 +84,7 @@
     </nav>
 
     <!-- Espaciador para evitar que el contenido se oculte detrás del navbar fijo -->
-<div class="navbar-spacer"></div>
+    <div class="navbar-spacer"></div>
 
     <!-- Formulario de publicación fuera del canva -->
     <div class="post-container">
@@ -95,7 +97,7 @@
             <label for="file">Selecciona imágenes o videos:</label>
             <input type="file" name="file[]" id="file" accept="image/*, video/*" multiple><br>
 
-                            <div id="previewContainer" class="preview-container">
+            <div id="previewContainer" class="preview-container">
                 <!-- Las imágenes y videos seleccionados aparecerán aquí -->
             </div>
 

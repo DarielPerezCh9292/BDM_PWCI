@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUTBOOK LOGIN</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../MVC/CSS/futbol-login.css">
 </head>
-<body>
+<body class="Fondo_futbol">
     <nav class="navbar-landing">
         <div class="navbar-container">
             <a class="navbar-brand" href="landing_page.html">
                 <i class="fas fa-futbol"></i> RedSocial
             </a>
-            
+
             <div class="navbar-buttons">
                 <a class="btn btn-login" href="Login.html">
                     <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
@@ -36,14 +37,13 @@
             <form class="login-form" action="#" method="POST">
                 <div class="form-group">
                     <label for="nombre_usuario">Nombre de Usuario</label>
-                    <input type="text" id="nombre_usuario" name="nombre_usuario" 
-                           placeholder="Ingresa tu usuario" required>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingresa tu usuario"
+                        required>
                 </div>
 
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" 
-                           placeholder="Ingresa tu contraseña" required>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
                 </div>
 
                 <button type="submit" class="login-btn">

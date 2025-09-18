@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>FUTBOOK PERFIL</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../MVC/CSS/Perfil.css">
     <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
@@ -12,7 +13,7 @@
     <!-- Estilos del navbar común -->
     <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
 </head>
-<body>
+<body class="Fondo_futbol">
     <!-- Incluir el navbar personalizado -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
@@ -21,26 +22,27 @@
                 <i class="fas fa-futbol me-2"></i>
                 <span>RedSocial</span>
             </a>
-            
+
             <!-- Botón hamburguesa para móviles -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- Contenido colapsable del navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Barra de búsqueda centrada -->
                 <div class="navbar-nav mx-auto">
                     <div class="search-container d-flex align-items-center">
                         <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="Buscar usuarios, publicaciones...">
-                        <button class="btn" type="button">
+                            <input type="text" class="form-control" placeholder="Buscar usuarios, publicaciones...">
+                            <button class="btn" type="button">
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Enlaces de navegación -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -58,7 +60,7 @@
                             <i class="fas fa-user me-1"></i> Mi Perfil
                         </a>
                     </li>
-                    
+
                     <!-- Enlaces administrativos -->
                     <li class="nav-item">
                         <a class="nav-link d-flex align-items-center" href="reportes.html">
@@ -70,10 +72,10 @@
                             <i class="fas fa-shield-alt me-1"></i> Moderar
                         </a>
                     </li>
-                    
+
                     <!-- Botón de cerrar sesión -->
                     <li class="nav-item ms-2">
-                                            <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
+                        <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
                             <i class="fas fa-sign-out-alt me-1"></i> Cerrar Sesión
                         </a>
                     </li>
@@ -83,7 +85,7 @@
     </nav>
 
     <!-- Espaciador para evitar que el contenido se oculte detrás del navbar fijo -->
-<div class="navbar-spacer"></div>
+    <div class="navbar-spacer"></div>
 
     <div class="profile-container">
         <!-- Información de Usuario -->
@@ -96,7 +98,8 @@
             </div>
             <div class="profile-details">
                 <p><strong>Tipo de usuario:</strong> <span>Usuario común</span></p>
-                <p><strong>Biografía:</strong> <span id="bioText">Este es un usuario de ejemplo que tiene un perfil público visible para otros usuarios de la plataforma.</span></p>
+                <p><strong>Biografía:</strong> <span id="bioText">Este es un usuario de ejemplo que tiene un perfil
+                        público visible para otros usuarios de la plataforma.</span></p>
                 <p><strong>Correo:</strong> <span id="emailText">usuario.ejemplo@email.com</span></p>
                 <p><strong>Seguidores:</strong> <span id="followersText">42</span></p>
                 <p><strong>Siguiendo:</strong> <span id="followingText">28</span></p>
@@ -106,14 +109,15 @@
         <!-- Sección de publicaciones -->
         <div class="recent-posts">
             <h3>Publicaciones Recientes</h3>
-            
+
             <!-- Publicación de ejemplo 1 -->
             <div class="post mb-4" id="post-1">
                 <div class="card mb-4">
                     <div class="card-body">
                         <!-- Cabecera de la publicación -->
                         <div class="d-flex align-items-center mb-3">
-                            <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40" height="40">
+                            <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40"
+                                height="40">
                             <div>
                                 <h6 class="mb-0">Usuario Visitado</h6>
                                 <small class="text-muted">15 Dic 2024 14:30</small>
@@ -121,7 +125,8 @@
                         </div>
 
                         <!-- Contenido de la publicación -->
-                        <p class="card-text mb-3">Esta es una publicación de ejemplo del usuario visitado. Aquí se muestra el contenido que ha compartido públicamente en la plataforma.</p>
+                        <p class="card-text mb-3">Esta es una publicación de ejemplo del usuario visitado. Aquí se
+                            muestra el contenido que ha compartido públicamente en la plataforma.</p>
 
                         <!-- Imagen de ejemplo -->
                         <img src="../imgs/img1.jpg" alt="Imagen de publicación" class="img-fluid rounded mb-3">
@@ -129,7 +134,8 @@
                         <!-- Interacciones -->
                         <div class="border-top border-bottom py-2 mb-3">
                             <div class="dropdown d-inline-block me-2">
-                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="reaccionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                                    id="reaccionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="far fa-thumbs-up"></i> Reaccionar
                                 </button>
                                 <ul class="dropdown-menu px-2" aria-labelledby="reaccionDropdown">
@@ -158,13 +164,15 @@
                         <div class="comments-section">
                             <div class="mb-3">
                                 <div class="d-flex mb-2">
-                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2" width="30" height="30">
+                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2"
+                                        width="30" height="30">
                                     <div class="bg-light p-2 rounded">
                                         <strong>Usuario1:</strong> ¡Excelente publicación!
                                     </div>
                                 </div>
                                 <div class="d-flex mb-2">
-                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2" width="30" height="30">
+                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2"
+                                        width="30" height="30">
                                     <div class="bg-light p-2 rounded">
                                         <strong>Usuario2:</strong> Muy interesante el contenido.
                                     </div>
@@ -173,7 +181,8 @@
 
                             <form class="comment-form">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Escribe un comentario..." required>
+                                    <input type="text" class="form-control" placeholder="Escribe un comentario..."
+                                        required>
                                     <button class="btn btn-primary" type="submit">
                                         <i class="fas fa-paper-plane"></i>
                                     </button>
@@ -189,14 +198,16 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40" height="40">
+                            <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40"
+                                height="40">
                             <div>
                                 <h6 class="mb-0">Usuario Visitado</h6>
                                 <small class="text-muted">14 Dic 2024 16:45</small>
                             </div>
                         </div>
 
-                        <p class="card-text mb-3">Otra publicación de ejemplo que muestra más contenido del usuario. Los visitantes pueden ver todas las publicaciones aprobadas del perfil.</p>
+                        <p class="card-text mb-3">Otra publicación de ejemplo que muestra más contenido del usuario. Los
+                            visitantes pueden ver todas las publicaciones aprobadas del perfil.</p>
 
                         <!-- Video de ejemplo -->
                         <video controls class="img-fluid rounded mb-3" width="100%">
@@ -206,7 +217,8 @@
 
                         <div class="border-top border-bottom py-2 mb-3">
                             <div class="dropdown d-inline-block me-2">
-                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
                                     <i class="far fa-thumbs-up"></i> Reaccionar
                                 </button>
                                 <ul class="dropdown-menu px-2">
@@ -229,7 +241,8 @@
                         <div class="comments-section">
                             <div class="mb-3">
                                 <div class="d-flex mb-2">
-                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2" width="30" height="30">
+                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2"
+                                        width="30" height="30">
                                     <div class="bg-light p-2 rounded">
                                         <strong>Usuario3:</strong> ¡Muy bueno el video!
                                     </div>
@@ -238,7 +251,8 @@
 
                             <form class="comment-form">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Escribe un comentario..." required>
+                                    <input type="text" class="form-control" placeholder="Escribe un comentario..."
+                                        required>
                                     <button class="btn btn-primary" type="submit">
                                         <i class="fas fa-paper-plane"></i>
                                     </button>
@@ -254,18 +268,21 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <div class="d-flex align-items-center mb-3">
-                            <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40" height="40">
+                            <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40"
+                                height="40">
                             <div>
                                 <h6 class="mb-0">Usuario Visitado</h6>
                                 <small class="text-muted">13 Dic 2024 10:20</small>
                             </div>
                         </div>
 
-                        <p class="card-text mb-3">Tercera publicación de ejemplo que completa el feed del usuario. Cada publicación muestra diferentes tipos de contenido y interacciones.</p>
+                        <p class="card-text mb-3">Tercera publicación de ejemplo que completa el feed del usuario. Cada
+                            publicación muestra diferentes tipos de contenido y interacciones.</p>
 
                         <div class="border-top border-bottom py-2 mb-3">
                             <div class="dropdown d-inline-block me-2">
-                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
                                     <i class="far fa-thumbs-up"></i> Reaccionar
                                 </button>
                                 <ul class="dropdown-menu px-2">
@@ -289,7 +306,8 @@
                         <div class="comments-section">
                             <div class="mb-3">
                                 <div class="d-flex mb-2">
-                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2" width="30" height="30">
+                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-2"
+                                        width="30" height="30">
                                     <div class="bg-light p-2 rounded">
                                         <strong>Usuario4:</strong> ¡Genial contenido!
                                     </div>
@@ -298,7 +316,8 @@
 
                             <form class="comment-form">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Escribe un comentario..." required>
+                                    <input type="text" class="form-control" placeholder="Escribe un comentario..."
+                                        required>
                                     <button class="btn btn-primary" type="submit">
                                         <i class="fas fa-paper-plane"></i>
                                     </button>
@@ -311,7 +330,7 @@
         </div>
     </div>
 
-    
+
 
 </body>
 </html>
