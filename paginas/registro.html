@@ -10,19 +10,47 @@
     <link rel="stylesheet" href="../MVC/CSS/futbol-registro.css">
 </head>
 <body class="Fondo_futbol">
-    <nav class="navbar-landing">
-        <div class="navbar-container">
-            <a class="navbar-brand" href="landing_page.html">
-                <i class="fas fa-futbol"></i> RedSocial
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo/Brand -->
+            <a class="navbar-brand d-flex align-items-center ms-5" href="index.html">
+                <i class="Futbook_logo"></i>
+                <span>FUTBOOK</span>
             </a>
-
-            <div class="navbar-buttons">
-                <a class="btn btn-login" href="Login.html">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                </a>
-                <a class="btn btn-register" href="registro.html">
-                    <i class="fas fa-user-plus"></i> Registrarse
-                </a>
+    
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Contenido colapsable del navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Barra de búsqueda centrada -->
+                <div class="navbar-nav mx-auto">
+    
+                </div>
+    
+                <!-- Enlaces de navegación -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="Login.html">
+                            Inicio de Sesión
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="registro.html">
+                            Nuevo usuario
+                        </a>
+                    </li>
+                    <!-- Botón de cerrar sesión -->
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-logout d-flex align-items-center" href="pg_Llegada.html">
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

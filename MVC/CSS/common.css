@@ -5,3 +5,11 @@
     background-position: center;
     
 }
+.Futbook_logo{
+    background-image: url("/imgs/favicon.ico");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+    height: 40px;
+    width: 40px;
+}

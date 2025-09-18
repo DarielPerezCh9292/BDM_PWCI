@@ -20,7 +20,7 @@ main, .main-content, .content-wrapper {
     background: linear-gradient(90deg, #251e4d 0%, #352d5a 100%);
     padding: 20px;
     border-radius: 8px;
-    border-color: #8eb2ff;
+    border: 2px solid #0000009b;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     color: white;
@@ -65,8 +65,7 @@ main, .main-content, .content-wrapper {
 
 /* Publicaciones recientes */
 .recent-posts {
-    background-color: #fff;
-    padding: 20px;
+    
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -75,7 +74,7 @@ main, .main-content, .content-wrapper {
     padding: 10px;
     margin: 10px 0;
     background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
-    border-color: #8eb2ff;
+    border: 2px solid #0000009b;
     color: white;
     border-radius: 5px;
 }
