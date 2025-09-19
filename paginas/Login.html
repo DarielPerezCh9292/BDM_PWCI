@@ -60,13 +60,13 @@
 
 
     <div class="main-container">
-        <div class="login-container">
+        <div class="login-container d-flex flex-column text-center justify-content-center">
             <div class="login-header">
-                <h1>¡Bienvenido de vuelta!</h1>
-                <p>Inicia sesión para continuar</p>
+                <h1>Inicia sesión para continuar</h1>
+                
             </div>
 
-            <form class="login-form" action="#" method="POST">
+            <form class="login-form d-flex flex-column text-center justify-content-center" action="#" method="POST">
                 <div class="form-group">
                     <label for="nombre_usuario">Nombre de Usuario</label>
                     <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingresa tu usuario"
@@ -78,16 +78,16 @@
                     <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
                 </div>
 
-                <button type="submit" class="login-btn">
-                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
-                </button>
+                
+                <button type="submit" class="registro-btn">
+                        <a href="Login.html" >
+                            Iniciar Sesion
+                        </a>
+                        
+                    </button>
             </form>
 
-            <div class="login-links">
-                <a href="registro.html">
-                    <i class="fas fa-user-plus"></i> ¿Aún no tienes una cuenta? Regístrate aquí
-                </a>
-            </div>
+            
         </div>
     </div>
 </body>
