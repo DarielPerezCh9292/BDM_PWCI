@@ -66,6 +66,11 @@ body::before {
     border-bottom: 3px solid var(--accent-gold);
 }
 
+.campos{
+    width: 100%;
+}
+
+
 .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,7 +90,8 @@ body::before {
 }
 
 .navbar-landing .navbar-brand:hover {
-    color: var(--white);
+    background: rgb(46, 40, 2);
+    border-color: #8eb2ff;
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
@@ -110,7 +116,8 @@ body::before {
 }
 
 .navbar-landing .btn-login:hover {
-    background: linear-gradient(45deg, var(--accent-gold), var(--accent-orange));
+    background: rgba(255,215,0,0.1);
+    border-color: #8eb2ff;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
     color: var(--white);
@@ -130,7 +137,8 @@ body::before {
 }
 
 .navbar-landing .btn-register:hover {
-    background: var(--accent-gold);
+    background: rgba(255,215,0,0.1);
+    border-color: #8eb2ff;
     color: var(--primary-green);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
@@ -148,37 +156,19 @@ body::before {
 
 /* ===== FORMULARIO DE REGISTRO FUTBOL ===== */
 .registro-container {
-    background: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
     backdrop-filter: blur(20px);
     border-radius: 25px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     padding: 50px 40px;
     width: 100%;
-    max-width: 500px;
+    max-width: 1500px;
     position: relative;
-    border: 3px solid var(--accent-gold);
+    border: 2px solid #0000009b;
     overflow: hidden;
 }
 
-.registro-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, var(--primary-green), var(--accent-gold), var(--accent-orange));
-}
 
-.registro-container::after {
-    content: '🏆';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
-    opacity: 0.3;
-    animation: bounce 2s infinite;
-}
 
 /* ===== TÍTULO DEL REGISTRO ===== */
 .registro-header {
@@ -189,7 +179,7 @@ body::before {
 .registro-header h1 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--primary-green);
+    color: white;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
@@ -209,12 +199,13 @@ body::before {
 
 .form-group {
     position: relative;
+    width: 1000px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: var(--primary-green);
+    color: white;
     font-weight: 600;
     font-size: 0.95rem;
 }
@@ -245,11 +236,7 @@ body::before {
 }
 
 /* ===== GRUPOS DE CAMPOS ===== */
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
+
 
 @media (max-width: 576px) {
     .form-row {
@@ -287,7 +274,7 @@ body::before {
 
 /* ===== BOTÓN DE REGISTRO ===== */
 .registro-btn {
-    background: linear-gradient(45deg, var(--accent-gold), var(--accent-orange));
+    background: linear-gradient(90deg, #251e4d 0%, #352d5a 100%);
     color: var(--white);
     border: none;
     padding: 18px 30px;
@@ -298,7 +285,7 @@ body::before {
     letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+    
     position: relative;
     overflow: hidden;
     margin-top: 10px;
@@ -315,14 +302,13 @@ body::before {
     transition: left 0.5s;
 }
 
-.registro-btn:hover::before {
-    left: 100%;
-}
+
 
 .registro-btn:hover {
-    background: linear-gradient(45deg, var(--accent-orange), var(--accent-gold));
+    background: rgba(30, 26, 4, 0.981);
+    border-color: #8eb2ff;
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+    
 }
 
 .registro-btn:active {
@@ -349,8 +335,9 @@ body::before {
 }
 
 .registro-links a:hover {
-    color: var(--accent-gold);
-    background: rgba(255, 215, 0, 0.1);
+    background: rgba(255,215,0,0.1);
+    border-color: #8eb2ff;
+    
     transform: translateY(-2px);
 }
 
@@ -453,19 +440,7 @@ body::before {
     }
 }
 
-.registro-container {
-    animation: fadeInUp 0.8s ease-out;
-}
 
-.form-group {
-    animation: slideInLeft 0.6s ease-out;
-}
-
-.form-group:nth-child(2) { animation-delay: 0.1s; }
-.form-group:nth-child(3) { animation-delay: 0.2s; }
-.form-group:nth-child(4) { animation-delay: 0.3s; }
-.form-group:nth-child(5) { animation-delay: 0.4s; }
-.form-group:nth-child(6) { animation-delay: 0.5s; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
