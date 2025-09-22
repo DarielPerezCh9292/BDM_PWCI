@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOOK LOGIN</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
+    <link rel="stylesheet" href="../MVC/CSS/futbol-login.css">
+    <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body class="Fondo_futbol">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo/Brand -->
+            <a class="navbar-brand d-flex align-items-center ms-5" href="index.html">
+                <i class="Futbook_logo"></i>
+                <span>FUTBOOK</span>
+            </a>
+    
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Contenido colapsable del navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Barra de búsqueda centrada -->
+                <div class="navbar-nav mx-auto">
+    
+                </div>
+    
+                <!-- Enlaces de navegación -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="pg_Login.html">
+                            Inicio de Sesión
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="pg_Registrar.html">
+                            Nuevo usuario
+                        </a>
+                    </li>
+                    <!-- Botón de cerrar sesión -->
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-logout d-flex align-items-center" href="pg_Llegada.html">
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="main-container">
+        <div class="login-container d-flex flex-column text-center justify-content-center">
+            <div class="login-header">
+                <h1>Inicia sesión para continuar</h1>
+                
+            </div>
+
+            <form class="login-form d-flex flex-column text-center justify-content-center" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre_usuario">Nombre de Usuario</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingresa tu usuario"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+
+                
+                <button type="submit" class="registro-btn">
+                        <a href="pg_Login.html" >
+                            Iniciar Sesion
+                        </a>
+                        
+                    </button>
+            </form>
+
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -3,14 +3,6 @@ body {
     padding-top: 0 !important;
 }
 
-.Fondo_futbol {
-    background-image: url("/imgs/Fondo_futbol2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
-
 /* Contenedor principal con margen superior */
 main, .main-content, .content-wrapper {
     margin-top: 80px !important;

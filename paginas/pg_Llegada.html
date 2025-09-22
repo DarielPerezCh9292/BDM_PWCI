@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOOK INICIO</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
+    <link rel="stylesheet" href="../MVC/CSS/futbol-landing.css">
+    
+    <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+</head>
+<body class="Fondo_futbol">
+    
+<!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo/Brand -->
+            <a class="navbar-brand d-flex align-items-center ms-5" href="index.html">
+                <i class="Futbook_logo"></i>
+                <span>FUTBOOK</span>
+            </a>
+
+            <!-- Botón hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable del navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Barra de búsqueda centrada -->
+                <div class="navbar-nav mx-auto">
+
+                </div>
+
+                <!-- Enlaces de navegación -->
+                <ul class="navbar-nav ms-auto">                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="pg_Login.html">
+                            Inicio de Sesión
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="pg_Registrar.html">
+                            Nuevo usuario
+                        </a>
+                    </li>                    
+                    <!-- Botón de cerrar sesión -->
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-logout d-flex align-items-center" href="pg_Llegada.html">
+                            Cerrar Sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <section id="publicaciones" class="publicaciones-section">
+        <div class="container publicaciones-container">
+            <div class="section-title bg-light">
+                <h2>¡Unete a nosotros!</h2>
+                <p>Publica, comenta, reacciona, y explora con la afición por el Futbol</p>
+            </div>
+    
+    
+            <div class="publications-grid">
+    
+                <div class="publication-item">
+                    <article class="post" id="post-1">
+                        <div class="card-body">
+                            <!-- Cabecera de la publicación -->
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40"
+                                    height="40">
+                                <div>
+                                    <h6 class="mb-0">Federico Peluche</h6>
+                                    <small>12 Jun 2025 10:05</small>
+                                    <span class="badge aprobation-success ms-2">Aprobada</span>
+                                </div>
+                            </div>
+    
+                            <!-- Contenido de la publicación -->
+                            <p class="card-text mb-3">Pueden creer lo injusto que fue el referi en esa partida? yo
+                                digo
+                                que lo funemos.</p>
+    
+                            <!-- Interacciones -->
+                            <div class="Seccion_Ingresar border-top border-bottom py-3 mb-3">
+    
+                                <div class="Boton_Landing d-inline-block me-2">⚽</div>
+                                <div class="Boton_Landing d-inline-block me-2"><i class="far fa-comment"></i>Comentar</div>
+                            </div>
+    
+                            <!-- Contador de reacciones -->
+                            <div class="mb-3 ps-2">
+                                <span class="me-3 text-muted">⚽ 3</span>
+    
+                            </div>
+    
+                            <!-- Sección de comentarios -->
+                            <div class="comments-section">
+                                <div class="mb-3">
+    
+                                </div>
+    
+    
+                            </div>
+                        </div>
+                    </article>
+    
+    
+    
+    
+    
+                </div>
+    
+                <div class="no-publications">
+                    <div class="no-publications-content">                        
+                        <a href="pg_Registrar.html" class="btn btn-primary">
+                            <div><h3 class="fw-bold">¡Crea una Cuenta Hoy!</h3></div>
+                            <img src="/imgs/favicon.ico" alt="" width="100px" height="100px"> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+</body>
+</html>

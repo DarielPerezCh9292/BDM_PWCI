@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUTBOOK INDEX</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
     <meta name="description" content="Página principal de la red social de la Copa Mundial de Fútbol">
-    
+
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
     <link rel="stylesheet" href="../MVC/CSS/Principal.css">
     <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
-    
+
 
 </head>
+
 <body class="Fondo_futbol">
 
     <!--NAVBAR-->
@@ -25,20 +28,20 @@
                 <i class="Futbook_logo"></i>
                 <span>FUTBOOK</span>
             </a>
-    
-            <!-- Botón hamburguesa para móviles -->
+
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Contenido colapsable del navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Barra de búsqueda centrada -->
                 <div class="navbar-nav mx-auto">
-    
+
                 </div>
-    
+
                 <!-- Enlaces de navegación -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -47,31 +50,31 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="Usuarios.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Usuarios.html">
                             Usuarios
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="Perfil.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Perfil.html">
                             Perfil
                         </a>
                     </li>
-    
+
                     <!-- Enlaces administrativos -->
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="reportes.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Reportes.html">
                             Reportes
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="moderar_publicaciones.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Moderacion.html">
                             Moderación
                         </a>
                     </li>
-    
+
                     <!-- Botón de cerrar sesión -->
                     <li class="nav-item ms-2">
-                        <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
+                        <a class="btn btn-logout d-flex align-items-center" href="pg_Llegada.html">
                             Cerrar Sesión
                         </a>
                     </li>
@@ -143,8 +146,8 @@
                             <div class="card-body">
                                 <!-- Cabecera de la publicación -->
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3" width="40"
-                                        height="40">
+                                    <img src="../imgs/img1.jpg" alt="Foto de perfil" class="rounded-circle me-3"
+                                        width="40" height="40">
                                     <div>
                                         <h6 class="mb-0">Federico Peluche</h6>
                                         <small>12 Jun 2025 10:05</small>
@@ -153,19 +156,20 @@
                                 </div>
 
                                 <!-- Contenido de la publicación -->
-                                <p class="card-text mb-3">Pueden creer lo injusto que fue el referi en esa partida? yo digo
+                                <p class="card-text mb-3">Pueden creer lo injusto que fue el referi en esa partida? yo
+                                    digo
                                     que lo funemos.</p>
 
                                 <!-- Interacciones -->
                                 <div class="border-top border-bottom py-3 mb-3">
                                     <div class="dropdown d-inline-block me-2">
-                                        <button class="btn btn-outline-secondary " type="button" id="reaccionDropdown"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <i class="far fa-thumbs-up"></i> ⚽
+                                        <button class="btn btn-outline-secondary " type="button" id="reaccionDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            </i> ⚽
                                         </button>
-
+                                
                                     </div>
-
+                                
                                     <button class="btn btn-outline-secondary">
                                         <i class="far fa-comment"></i> Comentar
                                     </button>
@@ -191,8 +195,8 @@
 
                                     <form class="comment-form">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Escribe un comentario..."
-                                                required>
+                                            <input type="text" class="form-control"
+                                                placeholder="Escribe un comentario..." required>
                                             <button class="btn btn-primary" type="submit">
                                                 <i class="fas fa-paper-plane"></i>
                                             </button>
@@ -245,48 +249,11 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../MVC/Boostrap/js/bootstrap.bundle.min.js"></script>
+
     <script src="../MVC/JS/Principal.js"></script>
 
-    <!-- Script para funcionalidad de la página -->
-    <script>
-        // Funcionalidad para previsualización de archivos
-        document.getElementById('postImage').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById('previewImg').src = e.target.result;
-                    document.getElementById('imagePreview').classList.remove('d-none');
-                    document.getElementById('videoPreview').classList.add('d-none');
-                };
-                reader.readAsDataURL(file);
-            }
-        });
 
-        document.getElementById('postVideo').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById('previewVideo').src = e.target.result;
-                    document.getElementById('videoPreview').classList.remove('d-none');
-                    document.getElementById('imagePreview').classList.add('d-none');
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-        // Manejo del formulario
-        document.getElementById('postForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Aquí iría la lógica para enviar la publicación
-            alert('Publicación enviada (en una implementación real)');
-            this.reset();
-            document.getElementById('imagePreview').classList.add('d-none');
-            document.getElementById('videoPreview').classList.add('d-none');
-        });
-    </script>
 
 </body>
+
 </html>

@@ -9,19 +9,14 @@ body {
     min-height: 100vh;
 }
 
-.Fondo_futbol {
-    background-image: url("/imgs/Fondo_futbol2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
 
 /* Contenedor principal con margen superior */
 main, .main-content, .content-wrapper {
     margin-top: 90px !important;
     padding-top: 20px !important;
 }
+
+
 
 /* Título principal */
 h2.text-center {
@@ -72,6 +67,7 @@ h2.text-center {
     position: relative;
     overflow: hidden;
     min-height: 120px;
+    
 }
 
 .card:hover {
@@ -79,15 +75,7 @@ h2.text-center {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    
-}
+
 
 /* Contenido de las tarjetas */
 .card > div {
@@ -231,6 +219,7 @@ h2.text-center {
 
 .card {
     animation: fadeInUp 0.6s ease forwards;
+    
 }
 
 .card:nth-child(1) { animation-delay: 0.1s; }
@@ -240,6 +229,8 @@ h2.text-center {
 
 /* Estilos adicionales para mejorar la apariencia */
 .container {
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
+    border: 2px solid #0000009b;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;

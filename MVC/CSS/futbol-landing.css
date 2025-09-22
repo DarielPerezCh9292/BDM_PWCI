@@ -14,21 +14,40 @@
     --field-green: #8bc34a;
 }
 
-/* ===== RESET COMPLETO ===== */
-* {
+
+
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 50%, #f0f8f0 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding-top: 0 !important;
+    min-height: 100vh;
 }
 
-html, body {
+/* Estilos para el header de la página */
+.page-header {
+    
+    padding-top: 20px !important;
+    background: #8eb2ff;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid #403485;
+}
+
+.page-title {
+    color: #403485 !important;
+    font-size: 2.5rem;
+    font-weight: 700;
     margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-subtitle {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1.1rem;
+    margin: 10px 0 0 0;
+    opacity: 0.9;
 }
 
 /* ===== NAVBAR FUTBOL ===== */
@@ -74,7 +93,7 @@ html, body {
 .navbar-landing .btn-login:hover {
     background: linear-gradient(45deg, var(--accent-gold), var(--accent-orange));
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+    box-shadow: 0 6px 20px rgba(0, 0, 255, 0.6);
     color: var(--white);
     text-decoration: none;
 }
@@ -95,7 +114,7 @@ html, body {
     background: var(--accent-gold);
     color: var(--primary-green);
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 55, 255, 0.4);
     text-decoration: none;
 }
 
@@ -111,16 +130,7 @@ html, body {
     overflow: hidden;
 }
 
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-    opacity: 0.3;
-}
+
 
 .hero-section .hero-container {
     position: relative;
@@ -194,7 +204,7 @@ html, body {
 .btn-primary-hero:hover {
     background: linear-gradient(45deg, var(--accent-orange), var(--accent-gold));
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(8, 0, 255, 0.5);
     color: var(--white);
 }
 
@@ -235,19 +245,10 @@ html, body {
     max-width: 100%;
     margin: 60px 0;
     padding: 40px 0;
-    background: var(--white);
-    position: relative;
+    
 }
 
-.publicaciones-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, var(--primary-green), var(--accent-gold), var(--accent-orange));
-}
+
 
 .publicaciones-section .publicaciones-container {
     max-width: 900px;
@@ -256,7 +257,10 @@ html, body {
 }
 
 .publicaciones-section .section-title {
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
+    border: 2px solid #0000009b;
     text-align: center;
+    border-radius: 10px;
     margin-bottom: 50px;
 }
 
@@ -264,7 +268,7 @@ html, body {
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color: var(--primary-green);
+    border-radius: 10px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -464,24 +468,7 @@ html, body {
 }
 
 /* ===== ELEMENTOS DE FÚTBOL ===== */
-.hero-section::after {
-    content: '⚽';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 3rem;
-    opacity: 0.2;
-    animation: bounce 2s infinite;
-}
 
-.publicaciones-section::after {
-    content: '🏆';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
-    opacity: 0.1;
-}
 
 /* ===== ESTILOS ADICIONALES PARA NUEVAS CLASES ===== */
 .navbar-container {
@@ -511,6 +498,59 @@ html, body {
 .publication-item {
     width: 100%;
     max-width: 800px;
+}
+
+
+.publication-item .card-body {
+    padding: 20px;
+    border: 2px solid #0000009b;
+}
+
+.publication-item .post {
+    background: linear-gradient(180deg, #403485 0%, #8073bc 90%);
+    border-radius: 15px;
+    border-color: #8eb2ff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: white;
+}
+
+
+
+.Boton_Landing{
+    background-color: rgba(255,215,0,0.15);
+    border-color: #6c757d;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.Boton_Landing:hover{
+    background-color: rgba(255, 217, 0, 0);
+    border-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
+}
+
+.Seccion_Ingresar:hover{
+    background-image: url("/imgs/landing_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    max-width: 900px; 
+    margin: 0 auto; /* Centra el post */
 }
 
 .publication-user {
@@ -599,7 +639,7 @@ html, body {
 }
 
 .no-publications-content .btn {
-    background: linear-gradient(45deg, var(--accent-gold), var(--accent-orange));
+    background: linear-gradient(90deg, #251e4d 0%, #352d5a 100%);
     color: var(--white);
     padding: 15px 30px;
     border-radius: 25px;
@@ -608,12 +648,12 @@ html, body {
     display: inline-block;
     transition: all 0.3s ease;
     border: none;
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    
 }
 
 .no-publications-content .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 6px 20px rgba(0, 11, 60, 0.5);
     color: var(--white);
     text-decoration: none;
 }

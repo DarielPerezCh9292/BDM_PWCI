@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUTBOOK PERFIL</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../MVC/CSS/common.css">
     <link rel="stylesheet" href="../MVC/Boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../MVC/CSS/Perfil.css">
     <link rel="stylesheet" href="../MVC/CSS/navbar-common.css">
@@ -22,20 +22,20 @@
                 <i class="Futbook_logo"></i>
                 <span>FUTBOOK</span>
             </a>
-    
+
             <!-- Botón hamburguesa para móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Contenido colapsable del navbar -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- Barra de búsqueda centrada -->
                 <div class="navbar-nav mx-auto">
-    
+
                 </div>
-    
+
                 <!-- Enlaces de navegación -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -44,31 +44,31 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="Usuarios.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Usuarios.html">
                             Usuarios
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center active" href="Perfil.html">
+                        <a class="nav-link d-flex align-items-center active" href="pg_Perfil.html">
                             Perfil
                         </a>
                     </li>
-    
+
                     <!-- Enlaces administrativos -->
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="reportes.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Reportes.html">
                             Reportes
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex align-items-center" href="moderar_publicaciones.html">
+                        <a class="nav-link d-flex align-items-center" href="pg_Moderacion.html">
                             Moderación
                         </a>
                     </li>
-    
+
                     <!-- Botón de cerrar sesión -->
                     <li class="nav-item ms-2">
-                        <a class="btn btn-logout d-flex align-items-center" href="landing_page.html">
+                        <a class="btn btn-logout d-flex align-items-center" href="pg_Llegada.html">
                             Cerrar Sesión
                         </a>
                     </li>
@@ -89,9 +89,7 @@
                     <img src="../imgs/img3.png" alt="Foto de Perfil" class="profile-photo" id="profilePhoto">
                     <div class="profile-name">
                         <h2>Moctezuma <span id="emailText">Moctete@outlook.es</span></h2>
-                        <button class="edit-profile-btn" onclick="openEditModal()">
-                            <i class="fas fa-edit"></i> Editar Perfil
-                        </button>
+                        
                     </div>
                 </div>
                 <div class="profile-details text-center">
@@ -99,8 +97,11 @@
 
                     <p><strong>Seguidores:</strong> <span id="followersText">25</span> <strong>Siguiendo:</strong> <span
                             id="followingText">18</span></p>
-
+                    <button class="edit-profile-btn" onclick="openEditModal()">
+                        <i class="fas fa-edit"></i> Editar Perfil
+                    </button>
                 </div>
+                
             </div>
 
             <!-- Sección de publicaciones -->
@@ -316,79 +317,7 @@
         </div>
     </div>
 
-    <script src="../MVC/Boostrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Script para funcionalidad de la página -->
-    <script>
-        // Funciones para los modales
-        function openEditModal() {
-            document.getElementById('editProfileModal').style.display = 'block';
-        }
-
-        function closeEditModal() {
-            document.getElementById('editProfileModal').style.display = 'none';
-        }
-
-        function editPost(postId) {
-            document.getElementById('editarModal').style.display = 'block';
-            document.getElementById('edit-id').value = postId;
-            // Aquí podrías cargar los datos de la publicación
-        }
-
-        function closeEditPostModal() {
-            document.getElementById('editarModal').style.display = 'none';
-        }
-
-        function deletePost(postId) {
-            if (confirm('¿Estás seguro de que quieres eliminar esta publicación?')) {
-                // Aquí iría la lógica para eliminar la publicación
-                document.getElementById('post-' + postId).remove();
-                alert('Publicación eliminada');
-            }
-        }
-
-        // Cerrar modales al hacer clic fuera de ellos
-        window.onclick = function (event) {
-            const editModal = document.getElementById('editProfileModal');
-            const editPostModal = document.getElementById('editarModal');
-
-            if (event.target === editModal) {
-                editModal.style.display = 'none';
-            }
-
-            if (event.target === editPostModal) {
-                editPostModal.style.display = 'none';
-            }
-        }
-
-        // Previsualización de foto de perfil
-        document.getElementById('photoInput').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    document.getElementById('profilePhotoPreview').src = e.target.result;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-        // Manejo del formulario de edición de perfil
-        document.querySelector('.edit-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Aquí iría la lógica para guardar los cambios
-            alert('Cambios guardados (en una implementación real)');
-            closeEditModal();
-        });
-
-        // Manejo del formulario de edición de publicación
-        document.getElementById('formEditar').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Aquí iría la lógica para guardar los cambios
-            alert('Publicación actualizada (en una implementación real)');
-            closeEditPostModal();
-        });
-    </script>
 
 </body>
 </html>

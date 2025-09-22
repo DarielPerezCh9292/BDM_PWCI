@@ -6,13 +6,6 @@
 }
 
 
-.Fondo_futbol {
-    background-image: url("/imgs/Fondo_futbol2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
 
 .test_input_color{
     color: black;
