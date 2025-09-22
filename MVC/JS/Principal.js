@@ -15,7 +15,7 @@ class WorldCupYearsSlider {
         this.createSliderHTML();
         this.bindEvents();
         this.updateSlider();
-        this.setActiveYear(2022); // Año más reciente por defecto
+        this.setActiveYear(2022); // Año más reciente por defect
     }
 
     createSliderHTML() {
